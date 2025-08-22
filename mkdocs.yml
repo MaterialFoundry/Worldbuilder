@@ -1,0 +1,76 @@
+site_name: Worldbuilder Documentation
+site_url: https://materialfoundry.github.io/Worldbuilder/
+nav:
+  - Home: 
+    - Home: index.md
+    - Roadmap: roadmap.md
+    - Changelog: changelog.md
+  - Getting Started: 
+    - Getting Started: gettingStarted/gettingStarted.md
+    - Requirements: gettingStarted/requirements.md
+    - Installation: gettingStarted/installation.md
+  - Main Application: mainApplication.md
+  - Articles: 
+    - Introduction: articles/introduction.md
+    - Text Editing: articles/textEditing.md
+    - Inserts: articles/inserts.md
+    - Sidebar Options: articles/sidebarOptions.md
+  - Tags: tags.md
+  - Settings: settings.md
+  - API: api.md
+    
+theme:
+  name: material
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue grey
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+  
+  favicon: img/icon.ico
+  logo: img/MaterialFoundry.png
+
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - toc.integrate
+    - navigation.top
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - tables
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/3hd4G6TkmA
+    - icon: fontawesome/brands/patreon
+      link: https://www.patreon.com/materialfoundry
+
+extra_css:
+  - style.css
