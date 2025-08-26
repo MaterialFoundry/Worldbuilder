@@ -1,0 +1,2 @@
+The Favorite tab shows articles that have been tagged as favorite in one of the [article](./articles.md) tabs.<br>
+This tab works exactly the same as the other article tabs, except that you cannot create new articles here.

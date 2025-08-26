@@ -9,12 +9,18 @@ nav:
     - Getting Started: gettingStarted/gettingStarted.md
     - Requirements: gettingStarted/requirements.md
     - Installation: gettingStarted/installation.md
-  - Main Application: mainApplication.md
+    - Configuration: gettingStarted/configuration.md
+  - Main Application: 
+    - Main Application: mainApplication/mainApplication.md
+    - Home Tab: mainApplication/home.md
+    - Favorites Tab: mainApplication/favorites.md
+    - Article Tabs: mainApplication/articles.md
+    - Searching Articles: mainApplication/searching.md
   - Articles: 
-    - Introduction: articles/introduction.md
-    - Text Editing: articles/textEditing.md
-    - Inserts: articles/inserts.md
+    - Articles: articles/articles.md
+    - Pages: articles/pages.md
     - Sidebar Options: articles/sidebarOptions.md
+    #- Widgets: articles/widgets.md
   - Tags: tags.md
   - Settings: settings.md
   - API: api.md

@@ -9,8 +9,8 @@ These features are organized by category, not by priority.
 ??? changelog "Article Templates"
     When creating a new article, provide multiple templates (based on article type) to help with the creation of the article (e.g. add Biography section for characters).
 
-## Insertables
-Insertables are objects that can be inserted into an article as an interactive element.
+## Widgets
+Widgets are objects that can be inserted into an article as an interactive element.
 
 ??? changelog "Timelines"
     Allow timelines to be inserted into an article.
@@ -29,9 +29,9 @@ Insertables are objects that can be inserted into an article as an interactive e
     (Rollable) loot tables
 
 ??? changelog "To do/checklists"
-    A configurable list where list items can be removed or strikken through.<br>
+    A configurable list where list items can be added, removed or strikken through.<br>
     Can be used as a to do list, as a progress indicator, etc.<br>
-    Add way to add list entries from articles (e.g. for note taking)
+    Add way to modify list entries from articles (e.g. for note taking)
 
 ## Automation & Gaming Systems
 
@@ -62,3 +62,6 @@ Insertables are objects that can be inserted into an article as an interactive e
 ??? changelog "Calendar System"
     Either use another module (such as [Simple Calendar](https://foundryvtt.com/packages/foundryvtt-simple-calendar)), or create a new calendar system.<br>
     Integrate this calendar into the Timelines feature, link it to relevant article data (such as birth dates), insert dates or (partial) calendars into articles, etc.
+
+??? changelog "Themes"
+    Change how Worldbuilder appears. Configure backgrounds and colors.

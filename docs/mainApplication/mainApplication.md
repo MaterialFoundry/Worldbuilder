@@ -13,21 +13,7 @@ The main application of Worldbuilder
 
 ### Favorites
 
-### Sessions
-
-### Quests
-
-### Characters
-
-### Groups
-
-### Creatures
-
-### Locations
-
-### Objects
-
-### Other
+### Article Tabs
 
 ### Tags
 
