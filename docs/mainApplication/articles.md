@@ -1,6 +1,6 @@
 <div class="imgContainer" style="max-width:50%"><img src="../../img/mainApp/articles.png"></div>
-Articles are the main source of data within Worldbuilder. They contain information about sessions, quests, characters, etc. For more information on articles, click [here](../articles/articles.md).<br>
-Each article type has their own tab.
+[Articles](../articles/articles.md) are the main source of data within Worldbuilder. They contain information about sessions, quests, characters, etc.<br>
+Each article type has their own tab, which are identical, except for which articles they display.
 
 ## Search Bar
 At the top of the tab you will find the search bar. This allows you to search through all Worldbuilder articles of the tab type. You can find more information on searching [here](./searching.md).
@@ -25,5 +25,5 @@ Right-click an article and press the ":fontawesome-solid-trash: Delete" button.
 Right-click an article and press the ":fontawesome-solid-copy: Duplicate" button.
 
 ## Making Articles Favorites
-Favorite articles will show up in the [Favorites tab](favorites.md).<br>
+Favorite articles will show up in the [Favorites tab](./mainApplication.md#favorites).<br>
 You can favorite an article by hovering over the article and pressing the :fontawesome-solid-star: icon.

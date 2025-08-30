@@ -4,7 +4,7 @@ The Options Configurator configures which options will be available in the [side
 The sidebar options for each article type can be configured independently.
 
 You can open the Sidebar Options Configuratior in the following ways:
- 
+
 1. In an [article](./articles.md) is opened and in edit mode, press the "Edit Sidebar Options" button in the sidebar.
 2. In the [Tab Configuration](../settings.md#tab-configuration) section of the Settings, press one of the the :material-format-columns: buttons.
 
@@ -17,8 +17,8 @@ The type of the option, you can select one of the following types:
 * <b>Textbox:</b> Accepts any kind of text input.
 * <b>Number:</b> Accepts numeric inputs.
 * <b>Select:</b> Allows the selection of pre-defined values.
-* <b>Article:</b> Accepts Worldbuilder articles.
-* <b>Article/Text:</b> Accepts Worldbuilder articles or text.
+* <b>Article:</b> Accepts Worldbuilder articles by dragging them from the [main application](../mainApplication/mainApplication.md) into the option's box.
+* <b>Article/Text:</b> Accepts Worldbuilder articles by dragging them from the [main application](../mainApplication/mainApplication.md) into the option's box, also accepts text.
 
 <div class="imgContainer"><img src="../../img/article/sidebarConfig-selectOptions.png"></div>
 For the Select type, you can configure the select options by pressing the :material-cog: icon, which expands the option column.

@@ -5,15 +5,10 @@ nav:
     - Home: index.md
     - Roadmap: roadmap.md
     - Changelog: changelog.md
-  - Getting Started: 
-    - Getting Started: gettingStarted/gettingStarted.md
-    - Requirements: gettingStarted/requirements.md
-    - Installation: gettingStarted/installation.md
-    - Configuration: gettingStarted/configuration.md
+  - Getting Started: gettingStarted.md
   - Main Application: 
     - Main Application: mainApplication/mainApplication.md
     - Home Tab: mainApplication/home.md
-    - Favorites Tab: mainApplication/favorites.md
     - Article Tabs: mainApplication/articles.md
     - Searching Articles: mainApplication/searching.md
   - Articles: 
@@ -48,12 +43,15 @@ theme:
   features:
     - navigation.tracking
     - navigation.tabs
+    - navigation.tabs.sticky
     - toc.integrate
     - navigation.top
     - content.code.copy
 
 plugins:
   - search
+  - glightbox:
+      background: black
 
 markdown_extensions:
   - attr_list

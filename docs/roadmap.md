@@ -1,5 +1,7 @@
-This page gives an overview of the planned features for Worldbuilder.<br>
-These features are organized by category, not by priority.
+This page gives an overview of the planned features for Worldbuilder. These features are organized by category, not by priority.<br>
+Although it is planned to implement these features, this is not a guarantee.
+
+If you have an idea for a great feature, please navigate to [Feedback & Issues](./index.md#feedback--issues).
 
 ## Articles
 ??? changelog "User Section"
