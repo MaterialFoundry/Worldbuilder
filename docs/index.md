@@ -21,7 +21,7 @@ Worldbuilder allows you (or your players) to create articles to describe, for ex
 
 Worldbuilder is highly customizable, allowing you to decide what information is important for what article, and what information should be hidden for everyone, or only for select players.
 
-<div class="imgContainer center"><img src="./img/home/app+articles.png"></div>
+<div class="imgContainer center"><img src="./img/home/AppArticles.png"></div>
 
 
 ## Combatibility
