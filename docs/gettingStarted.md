@@ -51,7 +51,7 @@ Due to the way the Forge handles user data, there are some things you have to do
 #### Forge Configuration
 1. Make sure you run Worldbuilder at least once
 2. Log into the Forge and go to your [Assets Library](https://forge-vtt.com/assets/browse).<br>There should be a "worldbuilder" folder, if not, go back to step 1
-3. Hover over the "worldbuilder" folder and press the :fontawesome-solid-share-alt: button, which opens a popup
+3. Hover over the "worldbuilder" folder and press the :fontawesome-solid-share-nodes: button, which opens a popup
 4. Set Permissions to "Read Assets, Write Assets"
 5. Set "Key name" to a name that's unique to your world. If you leave it set to "worldbuilder" and one of your players play in another game that uses Worldbuilder, there might be file conflicts. Something like "worldbuilder-[gameName]" could work
 6. Click "Share Folder"
