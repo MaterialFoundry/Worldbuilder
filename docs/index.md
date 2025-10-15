@@ -17,7 +17,7 @@ Build immersive worlds by creating and linking articles for everything in your g
 
 Highly customizable, Worldbuilder puts you in full control. Decide exactly what information matters for each article, and fine-tune how this information is displayed for you, specific players, or for everyone.
 
-To unlock the full power of Worldbuilder, a subscription to the [Material Foundry Patreon](https://www.patreon.com/materialfoundry) at the Material Apprentice tier (or higher) is required.
+Join the [Material Foundry Patreon](https://www.patreon.com/materialfoundry) at the Material Apprentice tier (or higher) to gain access to Worldbuilder.
 Want to try it first? Give the free [demo](./demo.md) version a try.
 
 <p><iframe style="display: block; margin: 0 auto;" title="YouTube video player" src="https://www.youtube.com/embed/NmmvDtDbnS0?si=pr9EtvvD82XdcbBt" width="560" height="315" frameborder="0" allowfullscreen=""></iframe></p>
