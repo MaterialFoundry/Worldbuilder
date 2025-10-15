@@ -1,7 +1,7 @@
 This page gives an overview of the planned features for Worldbuilder. These features are organized by category, not by priority.<br>
 Although it is planned to implement these features, this is not a guarantee.
 
-If you have an idea for a great feature, please navigate to [Feedback & Issues](./index.md#feedback--issues).
+If you have an idea for a great feature, please navigate to [Feedback & Issues](./index.md#feedback-issues).
 
 ## Articles
 ??? changelog "User Section"
@@ -14,45 +14,46 @@ If you have an idea for a great feature, please navigate to [Feedback & Issues](
 ## Widgets
 Widgets are objects that can be inserted into an article as an interactive element.
 
-??? changelog "Timelines"
-    Allow timelines to be inserted into an article.
+??? changelog "Maps: Layers"
+    Add different layers to a map. For example demographic maps, boundaries.<br>
+    Also item layers, so certain groups of items can be hidden or displayed (e.g. a shop layer, a landmark layer, etc).
 
-??? changelog "Hierarchies"
-    A way to display hierarchies, such as family trees, dynasties or social rankings.
+??? changelog "Maps: Zones"
+    Drawable zones. Could designate regions, neighbourhoods, etc.
 
-??? changelog "Interactive Maps"
-    Drop pins onto maps that display text when clicked, open an article when clicked, or highlight something (e.g. a legend) when hovered.<br>
-    Create (toggleable) map layers.<br>
-    Allow zooming & panning.
-
-??? changelog "Interactive Tables"
-    For example:<br>
-    Pricelists for shops<br>
-    (Rollable) loot tables
-
-??? changelog "To do/checklists"
+??? changelog "New Widget Type: To do/checklists"
     A configurable list where list items can be added, removed or strikken through.<br>
     Can be used as a to do list, as a progress indicator, etc.<br>
     Add way to modify list entries from articles (e.g. for note taking)
 
+??? changelog "New Widget Type: Timelines"
+    Allow timelines to be inserted into an article.
+
+??? changelog "New Widget Type: Hierarchies"
+    A way to display hierarchies, such as family trees, dynasties or social rankings.
+
+??? changelog "New Widget Type: Interactive Tables"
+    For example:<br>
+    Pricelists for shops<br>
+    (Rollable) loot tables
+
 ## Automation & Gaming Systems
 
-??? changelog "Gaming System Integrations"
+??? changelog "Improved Gaming System Integrations"
     Parse article data from actors.<br>
     Add (rollable) insertables, such as HP bars, skills, abilities, etc.
 
 ## Data Management
 
-??? changelog "Import & Export the Entire Database"
-    Allow the entire database to be exported or imported, either for backing up or sharing the database.
+??? changelog "Allow Data Sharing & Edits Through Sockets"
+    Currently, non-GM players need the "Upload New Files" permission in order for them to edit articles, and users of the Forge require addition setup to even see articles.
+    Allowing data sharing through sockets allows articles to be opened and edited without any special permissions, but the GM needs to be online.
 
 ??? changelog "Import & Export Single Articles"
     Allow single articles to be exported or imported.
 
-??? changelog "Automatic Backups"
-    Automatically create backups of the database with configurable timeframe (e.g. once a week) and a configurable amount of stored backups.<br>
-    Add option to export and import backups.<br>
-    Allowing backups to be saved somewhere else (Google Drive, Dropbox, etc) would be a pre.
+??? changelog "External Backups"
+    Allowing backups to be saved somewhere else (Google Drive, Dropbox, etc).
 
 ??? changelog "Content Creator Import Method"
     A conventient way for contenct creators to bundle Worldbuilder articles with their content.<br>

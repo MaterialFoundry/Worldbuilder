@@ -28,7 +28,7 @@ Worldbuilder has 8 different article types:
 These article types aren't strictly enforced by Worldbuilder. They are all practically identical and the distinction is only there for convenience. The only real differences between article types are:
 
 * Each article type has their own tab in the [main application](../mainApplication/mainApplication.md)
-* Each article type has their own set of [sidebar options](#options)
+* Each article type has their own set of [sidebar options](#sidebar-options)
 
 ### Header Buttons
 Each article has the following header buttons (at the top of the article):
@@ -43,13 +43,28 @@ Each article has the following header buttons (at the top of the article):
 You can create, delete or duplicate an article in one of the [article tabs](../mainApplication/articles.md) of the main application.
 
 <b>Creating Articles</b><br>
-Click the "+ Create New" button.
+Click the "+ Create New" button or use the [document import](#document-import) feature.
 
 <b>Deleting Articles</b><br>
 Right-click an article and press the ":fontawesome-solid-trash: Delete" button.
 
 <b>Duplicating Articles</b><br>
 Right-click an article and press the ":fontawesome-solid-copy: Duplicate" button.
+
+#### Document Import
+It is possible to create new articles by importing Foundry documents (actors, scenes, items, etc) into Worldbuilder. This is as simple as dragging the document from the Foundry sidebar onto the Worldbuilder application. This will open a popup to ask you the article type that the document should be imported as, click Import to create the new article.
+
+Worldbuilder will attempt to fill in as much of the article as possible. What exactly is filled in depends on the document type, your gaming system, and your configured [sidebar options](#sidebar-options):
+
+| Document Type | Corresponding Article Type | Filled data |
+|---------------|----------------------------|-------------|
+| Actor         | Characters                    | Title: Actor's name<br>Linked: Linked to actor<br>Pages\*: Biography page from character sheet<br>Images: Actor's image<br>Sidebar Options\*\*: From actor data |
+| Scene         | Locations                     | Title: Scene's name<br>Linked: Linked to scene<br>Pages: From scene's linked journal entry<br>Images: Scene's background image |
+| Item          | Object                        | Title: Item's name<br>Linked: Linked to item<br>Pages*: Item's description<br>Images: Item's image |
+| Journal       | Other                         | Title: Journal's name<br>Linked: Linked to journal<br>Pages: Journal pages |
+
+\* Depending on your gaming system, Worldbuilder may or may not be able to parse text from documents to generate pages. This has been tested on DnD5e and PF2E.<br>
+\*\* Depending on your gaming system, Worldbuilder may or may not be able to parse select options from documents. It will attempt to match the name of a sidebar option with a key within the document's `system` object. This will only work for some sidebar options. Better support will be added in the future.
 
 ### Opening Articles
 You can open an article in one of the [article tabs](../mainApplication/articles.md) of the main application, by clicking one of the articles.
@@ -142,7 +157,7 @@ Click on the image's name to select the text editor, you can then type a new nam
 ### Tags
 You can add [tags](../tags.md) to an article. Clicking on a tag in [play mode](#playedit-mode) will open the [tag configuration](../tags.md#tag-configuration) for that tag.
 
-See [here](../tags.md#adding--removing-tags-tofrom-an-article) for more information on how to add or remove tags from an article.
+See [here](../tags.md#adding-removing-tags-tofrom-an-article) for more information on how to add or remove tags from an article.
 
 ### Sidebar Options
 <div class="imgContainer">

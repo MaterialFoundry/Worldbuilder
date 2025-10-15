@@ -1,25 +1,26 @@
 # Worldbuilder Documentation
 
-!!! info "Pre-Release"
-    Please note that Worldbuilder is currently in pre-release. This means that there will probably be bugs, and not all intended features are available.
+Welcome to the Worldbuilder documentation.<br>
+You can navigate this documentation by clicking on the chapters at the top of this page, or the sub-chapters on the left.<br>
+Use the search function on the top-right to search for specific things.
 
-Welcome to the Worldbuilder documentation.
+Here is a list of useful links:
 
-* [Getting Started](./gettingStarted.md)
-* [Main Application](./mainApplication/mainApplication.md)
-* [Articles](./articles/articles.md)
-* [Tags](./tags.md)
-* [Settings](./settings.md)
-* [Roadmap](./roadmap.md)
-* [Changelog](./changelog.md)
-* [Feedback & Issues](#feedback-issues)
+* [Getting Started](./gettingStarted.md): Instructions on installing and using the module
+* [Roadmap](./roadmap.md): Planned features
+* [Feedback & Issues](#feedback-issues): For bug reports and feature requests
 
 ## Worldbuilder
-Worldbuilder is a worldbuilding and campaign management module that is running completely within your [Foundry VTT](https://foundryvtt.com) world.
+Worldbuilder is your all-in-one campaign management and worldbuilding toolkit, seamlessly integrated in [Foundry VTT](https://foundryvtt.com).
 
-Worldbuilder allows you (or your players) to create articles to describe, for example, gaming sessions, quests, characters or locations. Link these articles together to create an interconnected web of all the relevant things in your world.
+Build immersive worlds by creating and linking articles for everything in your game: sessions, quests, characters, locations, and more. Craft an expanding web of lore and let your players explore the connections, or keep it secret until the time is right.
 
-Worldbuilder is highly customizable, allowing you to decide what information is important for what article, and what information should be hidden for everyone, or only for select players.
+Highly customizable, Worldbuilder puts you in full control. Decide exactly what information matters for each article, and fine-tune how this information is displayed for you, specific players, or for everyone.
+
+To unlock the full power of Worldbuilder, a subscription to the [Material Foundry Patreon](https://www.patreon.com/materialfoundry) at the Material Apprentice tier (or higher) is required.
+Want to try it first? Give the free [demo](./demo.md) version a try.
+
+<p><iframe style="display: block; margin: 0 auto;" title="YouTube video player" src="https://www.youtube.com/embed/NmmvDtDbnS0?si=pr9EtvvD82XdcbBt" width="560" height="315" frameborder="0" allowfullscreen=""></iframe></p>
 
 <div class="imgContainer center"><img src="./img/home/AppArticles.png"></div>
 

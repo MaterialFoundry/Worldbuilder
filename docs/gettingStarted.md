@@ -1,25 +1,20 @@
 To get started using Worldbuilder, please follow these steps:
 
 1. [Check the module's requirements](#requirements)
-2. [Link your Patreon account to your Foundry account](#linking-a-patreon-account)
+2. (Not required for the [demo](./demo.md)) [Link your Patreon account to your Foundry account](#linking-a-patreon-account)
 3. [Install and enable the module](#module-installation)
 4. [Configure the module](#module-configuration)
-5. Learn about the Worldbuilder [application](./mainApplication/mainApplication.md), [articles](./articles/articles.md), [tags](./tags.md) and [settings](./settings.md)
+5. Follow the [quick start guide](./quickStart.md) to familiarize yourself with the basics of Worldbuilder
+6. Learn more about the Worldbuilder [application](./mainApplication/mainApplication.md), [articles](./articles/articles.md), [tags](./tags.md) and [settings](./settings.md)
 
 ## Requirements
 To get Worldbuilder to work, you need:
 
 * [Foundry VTT](https://foundryvtt.com/)
-* A subscription of the [Material Foundry Patreon](https://www.patreon.com/materialfoundry) at the "Material Apprentice" tier or higher.
-
-!!! info "Pre-Release"
-    For the pre-release version of Worldbuilder, any non-free Material Foundry Patreon subscription is fine.
+* A subscription of the [Material Foundry Patreon](https://www.patreon.com/materialfoundry) at the "Material Apprentice" tier or higher (Not required for the [demo](./demo.md)).
 
 ## Linking a Patreon Account
-!!! info "Pre-Release"
-    For the pre-release version of Worldbuilder, any non-free Material Foundry Patreon subscription is fine.<br>
-    You also do not have to link your Patreon account to your Foundry account, so you can ignore this section. Worldbuilder will not show up under your subscriptions page (see below).<br>
-    Instead, a manifest URL is provided on Patreon which you can use to install the module.
+Linking your Patreon account is not required for the [demo](./demo.md), continue to [Module Installation](#module-installation).
 
 Worldbuilder is a premium module that requires a subscription to the [Material Foundry Patreon](https://www.patreon.com/materialfoundry) at the 'Material Apprentice' tier or higher.<br>
 As a patron you can gain access to the module by linking your Patreon account to your Foundry account:
@@ -27,13 +22,14 @@ As a patron you can gain access to the module by linking your Patreon account to
 1. Log in on the [Foundry VTT website](https://foundryvtt.com/)
 2. Edit your profile [here](https://foundryvtt.com/me/edit)
 3. Link your Patreon account at the bottom of the page if you haven't already
-4. Verify that Worldbuilder shows up under your [subscriptions](https://foundryvtt.com/me/subscriptions). If it doesn't appear as expected under the "Subscribed Content" page of your user profile, you may need to Refresh your Patreon link
+4. Verify that Worldbuilder shows up under your [subscriptions](https://foundryvtt.com/me/subscriptions). If it doesn't appear as expected under the "Subscribed Content" page of your user profile, you may need to refresh your Patreon link
 
 ## Module Installation
-!!! info "Pre-Release"
-    For the pre-release version of Worldbuilder a manifest URL is provided on Patreon which you can use to install the module. To install, look for the "Installing via Manifest URL" section in the link below.
+### Full Version
+If you've subscribed to the Material Foundry Patreon at the correct tier and linked your Patreon account to your Foundry account, Worldbuilder should show up in Foundry's module browser if you search for `Worldbuilder`. Make sure you do not install `Worldbuilder Demo`. See [here](https://foundryvtt.com/article/modules/) for more info on installing modules.
 
-You will need to install and enable Worldbuilder by following [this guide](https://foundryvtt.com/article/modules/).
+### Demo Version
+The [demo](./demo.md) version is available for free to everyone and can be installed through Foundry's module browser, seach for `Worldbuilder Demo`. See [here](https://foundryvtt.com/article/modules/) for more info on installing modules.
 
 ## Module Configuration
 After [installing and enabling](#module-installation) Worldbuilder, you might have to do some configuration before you can start using the module.
@@ -43,10 +39,11 @@ Unless your server is on [the Forge](https://forge-vtt.com/) (see [here](#the-fo
 
 This permission is usually enabled for all user roles, except for "Player". If this is the case, Worldbuilder will detect this and show a popup where you can change these settings.<br>
 You can also change them by going to the "Game Settings" sidebar tab, clicking "Configure Settings", and then "Open Permission Configuration".<br>
-It is not required to grant this permission if you do not want specific users to be able to create or edit articles.
+It is not required to grant this permission if you do not want specific user roles to be able to create or edit articles.
 
 ### The Forge
-Due to the way the Forge handles user data, there are some things you have to do if you want your players to have access to your Worldbuilder data, and there are some limitations.
+Due to the way the Forge handles user data, there are some things you have to do if you want your players to have access to your Worldbuilder data.<br>
+If you do not do this, your users will not see any articles.
 
 #### Forge Configuration
 1. Make sure you run Worldbuilder at least once
@@ -59,9 +56,4 @@ Due to the way the Forge handles user data, there are some things you have to do
 8. Open Worldbuilder, go to the [settings tab](./settings.md)
 9. Under "Data Management" you will find "Forge Key Name" (if you're the GM), fill in the "Key name" used in step 5
 
-You should be set to go!
-
-#### Forge Limitations
-When you make changes, for example, to an article, an updated file is sent to the Forge servers. If you then refresh too soon, the changes you've made might seem to have been lost, because it takes some time for the Forge servers to respond with the updated file.
-
-Don't worry, your data is probably fine! If you refresh after a few minutes all should be fine.
+You should be ready to go!

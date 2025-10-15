@@ -18,6 +18,9 @@ At the bottom you will find a grid of all tags. Each grid space contains the nam
 When you hover over a grid space, a :fontawesome-solid-trash: icon will appear, clicking this will delete the tag.<br>
 By pressing on a grid space, the [tag configuration](#tag-configuration) will open for that tag.
 
+!!! note "Tag Visibility for Players"
+    Non-GM players can only see tags in the tag tab if they have at least [Limited Ownership](./articles/articles.md#ownership) of an article with that tag.
+
 <br clear="right">
 
 ## Creating & Deleting Tags

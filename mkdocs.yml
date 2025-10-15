@@ -3,9 +3,11 @@ site_url: https://materialfoundry.github.io/Worldbuilder/
 nav:
   - Home: 
     - Home: index.md
+    - Demo: demo.md
     - Roadmap: roadmap.md
     - Changelog: changelog.md
   - Getting Started: gettingStarted.md
+  - Quick Start Guide: quickStart.md
   - Main Application: 
     - Main Application: mainApplication/mainApplication.md
     - Home Tab: mainApplication/home.md
@@ -15,9 +17,12 @@ nav:
     - Articles: articles/articles.md
     - Pages: articles/pages.md
     - Sidebar Options: articles/sidebarOptions.md
-    #- Widgets: articles/widgets.md
+  - Widgets:
+    - Widgets: widgets/widgets.md
+    - Map: widgets/map.md
   - Tags: tags.md
   - Settings: settings.md
+  - Data Management: dataManagement.md
   - API: api.md
     
 theme:
@@ -68,6 +73,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - tables
+  - sane_lists
 
 extra:
   social:

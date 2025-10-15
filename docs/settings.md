@@ -21,6 +21,12 @@ The Data Management section handles settings related to data management.
 <b>Force Key Name (only on [the Forge](https://forge-vtt.com/))</b><br>
 Enter in the key name of your Worlbuilder folder to share the data with your players. See [here](./gettingStarted.md#the-forge) for more info.
 
+<b>Backups</b><br>
+See [here](./dataManagement.md).
+
+<b>Import/Export Data</b><br>
+See [here](./dataManagement.md).
+
 <b>Clear Data</b><br>
 Opens a dialog where you can select data to be cleared.
 

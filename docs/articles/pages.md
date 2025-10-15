@@ -12,7 +12,8 @@ To make any changes to pages the article will need to be in [edit mode](./articl
 <div class="imgContainer"><img src="../../img/article/createDeletePages.png"></div>
 Press the :material-plus: button to create a new page, press the :fontawesome-solid-trash: icon to delete a page.
 
-<b>Please note: Deleting pages is irreversible!</b>
+## Reordering Pages
+You can reorder pages by dragging one page button onto another.
 
 ## Page Title
 Click the title to select the textbox, and rename it.
@@ -35,30 +36,84 @@ Any text written in the text editor will be saved in the following situations:
 * When you close the article
 * Every 30 seconds
 
-### Article, Tag & Document Buttons
-You can insert buttons that will link to Worldbuilder articles, Worldbuilder tags, or Foundry documents.
+### Inserts
+Worldbuilder allows you to insert different kind of buttons, widgets, or other elements into the page. See [here](#page-inserts) for the different kind of inserts and how to configure them.
 
-You can drag articles or tags from the [main application](../mainApplication/mainApplication.md) into the editor, or you can drag a document from the Foundry sidebar into the editor. Alternatively, you can press the :fontawesome-solid-book-atlas: icon and select one of the options, which will open a popup with options to configure the button.
+## Page Inserts
+<div class="imgContainer"><img src="../../img/article/pageInserts.png"></div>
+Page inserts are either buttons or embedded elements that (usually) can be interacted with.
 
-### Tab Button
-You can insert a tab button that, when pressed, will open the selected tab in the [main application](../mainApplication/mainApplication.md).
+You could, for example, insert a button to open a different article, or insert an interactive [map](../widgets/map.md).
 
-Press the :fontawesome-solid-book-atlas: icon and select Worldbuilder Tab Button, which will open a popup with options to configure the button.
+There are 3 ways to add page inserts to your page:
 
-### Image Buttons
-An image button will open a specified image (either on your server or on the internet), and allows you to show that image to your players.
+1. Dragging a Foundry document, worldbuilder article, or worldbuilder widget onto the page. This will place the insert at the location of the cursor.
+2. Press the :fontawesome-solid-book-atlas: icon on the page editor toolbar, select the type of insert, and fill in the details in the popup.
+3. Manually entering the widget using the correct syntax (see below).
 
-Press the :fontawesome-solid-book-atlas: icon and select Image Button, which will open a popup with options to configure the button.
+### Insert Syntax
+The following syntax is used for page inserts:
 
-### Link Buttons
-A link button will open a specified internet link in a new window.
+```(prefix)(insert type)[data]{label}```<br>
+examples:<br>
+```
+@WB[characters.8GZOzo0RbPZ0iErU]{Carac Farlight}
+@IMG[image.webp]{Label}
+!WIDGET[map.qvTYLJfSJCpIiGoX]
+```
 
-Press the :fontawesome-solid-book-atlas: icon and select Link Button, which will open a popup with options to configure the button.
+<b>Prefix:</b><br>
+The 'prefix' designates whether the insert should be a button (`@`) or an embedded element (`!`).
+<div class="imgContainer"><img src="../../img/article/pageInserts-prefix.png"></div>
+Take the following example, which will create a button with label "Video Button", which will open a popup to play the video if clicked. Below that, a video element is inserted.
+```
+@VIDEO[video.webm]{Video Button}
+!VIDEO[vide.webm controls width:300 height:300 float:left]
+```
 
-### Icons
-You can insert [FontAwesome](https://fontawesome.com/) icons.
+<b>Type:</b><br>
+The type determines the kind of insert. See the table [below](#insert-types) for the different insert types.
 
-Press the :fontawesome-solid-book-atlas: icon and select Icon, which will open the [Icon Picker](#icon-picker).
+<b>Data:</b><br>
+Data consists of, at least, the UUID of an article, widget, document, etc, and optional styling data.<br>
+The styling data takes HTML style tags, such as:
+
+```
+width:100px //set the element width to 100 pixels
+height:50px //set the element height to 50 pixels
+color:red //set the text color to red
+background-color:#00FF00 //set the background color to #00FF00 (green)
+```
+
+For example, the following insert will create a button to open a Worldbuilder document with red background and green text:
+```
+@WB[characters.8GZOzo0RbPZ0iErU background-color:#FF0000 color:#00FF00]{Carac Farlight}
+```
+
+Style tags are separated with a space. No space is allowed between the tag and value, so `width:100px` is fine, `width: 100px` is not.
+
+See the table below for more optional other fields.
+
+<b>Label:</b><br>
+Only for button inserts.<br>
+The label that will be displayed on the button.
+
+### Insert Types
+
+| Type  | Description  |Syntax    | Data Options  |
+|--|--|--|--|
+| Foundry document button       | Button that opens a Foundry document        | `@UUID[documentUuid]{label}`   | Style tags    |
+| Worldbuilder article button   | Button that opens a [Worldbuilder article](../articles/articles.md)    | `@WB[articleUuid]{label}`   | Style tags    |
+| Worldbuilder widget button    | Button that opens a [Worldbuilder widget](../widgets/widgets.md)    | `@WIDGET[widgetUuid]{label}`   | Style tags    |
+| Worldbuilder tab button       | Button that opens a [Worldbuilder tab](../mainApplication/mainApplication.md#navigating-through-the-app)        | `@TAG[tabName]{label}`    | Style tags    |
+| Worldbuilder tag button       | Button that opens a [Worldbuilder tag](../tags.md)        | `@TAG[tagName]{label}`    | Style tags    |
+| Image button                  | Button that opens an image popup             | `@IMG[imageUrl]{label}`   | Style tags    |
+| Video button                  | Button that opens a video popup             | `@VIDEO[videoUrl]{label}` | Style tags    |
+| Link button                   | Button that opens an URL     | `@URL[Url]{label}`        | Style tags    |
+| Worldbuilder widget insert    | Embeds a [Widget](../widgets/widgets.md)       | `!WIDGET[widgetUuid]`         | Style tags    |
+| Video insert                  | Embeds a video            | `!VIDEO[videoUrl]`        | Style tags<br>`controls`: show video controls<br>`loop`: loop video    |
+| PDF insert                    | Embeds a PDF          | `!PDF[pdfUrl]`            | Style tags    |
+| Icon insert                   | Embeds an icon                          | `!ICON[fontAwesomeIcon]`  | Style tags  |
 
 ## Secrets
 <div class="imgContainer"><img src="../../img/article/pageSecrets.png"></div>

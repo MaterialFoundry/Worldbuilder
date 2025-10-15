@@ -5,7 +5,7 @@ This tab is meant to display a welcome message or information that you want easy
 
 The tab consists of 3 sections:
 
-* <b>[Search & Articles](#search--articles)</b>: Can be used to search through all Worldbuilder articles.
+* <b>[Search & Articles](#search-articles)</b>: Can be used to search through all Worldbuilder articles.
 * <b>[GM Set Pages](#gm-set-pages)</b>: Pages of information that can be configured by the GM.
 * <b>[User Notes](#user-notes)</b>: Notes that can be written by users.
 

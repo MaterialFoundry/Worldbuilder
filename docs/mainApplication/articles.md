@@ -16,7 +16,7 @@ You can configure how the articles are sorted by pressing the relevant button ne
 You can open an article by clicking on the article. This will open the [article window](../articles/articles.md).
 
 ## Creating New Articles
-You can create new articles by clicking the "+ Create New" button, next to the search bar.
+You can create new articles by clicking the "+ Create New" button, next to the search bar, or use the [document import](../articles/articles.md#document-import) feature.
 
 ## Deleting Articles
 Right-click an article and press the ":fontawesome-solid-trash: Delete" button.
@@ -25,5 +25,5 @@ Right-click an article and press the ":fontawesome-solid-trash: Delete" button.
 Right-click an article and press the ":fontawesome-solid-copy: Duplicate" button.
 
 ## Making Articles Favorites
-Favorite articles will show up in the [Favorites tab](./mainApplication.md#favorites).<br>
+Favorite articles will show up in the Favorites tab.<br>
 You can favorite an article by hovering over the article and pressing the :fontawesome-solid-star: icon.
