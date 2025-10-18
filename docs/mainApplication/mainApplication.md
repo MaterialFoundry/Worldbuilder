@@ -2,7 +2,12 @@
 
 The main application of Worldbuilder is the starting point for everything you do with the module. It shows all articles, categorized by article types, allows you to open and create articles, and more.
 
-To open the application, head the Game Settings sidebar tab (:material-cogs:), look for the Material Foundry section and press the :fontawesome-solid-book-atlas: Worldbuilder button.
+To open the application, you have 4 options:
+
+* Control Button: Click the Worldbuilder (:fontawesome-solid-globe:) control button (on the left of the screen)
+* Hotkey: Use the hotkey `Alt+W`, this hotkey can be configured in Contigure Controls in the Game Settings sidebar tab (:material-cogs:)
+* Sidebar: Head the Game Settings sidebar tab (:material-cogs:), look for the Material Foundry section and press the :fontawesome-solid-globe: Worldbuilder button
+* API: Call `worldbuilder.api.open()`
 
 <div class="imgContainer center">
     <img src="../../img/mainApp/mainApp.png">

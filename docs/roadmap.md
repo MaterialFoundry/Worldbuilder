@@ -60,6 +60,10 @@ Widgets are objects that can be inserted into an article as an interactive eleme
     For example, actors could bundle a character article, scenes could bundle a location article, etc.<br>
     Ideally, entire campaigns could be imported.
 
+??? changelog "Selective Article Sharing Between Different Worlds"
+    Right now it is possible to share all Worldbuilder data between different worlds on the same server (see [here](./dataManagement.md#data-id)).<br>
+    This feature will add a way to configure this on an article-by-article basis. So if you run multiple games with the same campaign, you could share all NPC characters, locations, etc between the different worlds, while keeping PC characters and other articles relevant to specific games separate.
+
 ## Other
 
 ??? changelog "Calendar System"

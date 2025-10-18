@@ -16,14 +16,16 @@ Changes can only be made to articles when it's in [edit mode](#playedit-mode).
 ### Article Types
 Worldbuilder has 8 different article types:
 
-* <b>Sessions</b>: For session descriptions & notes.
-* <b>Quests</b>: To describe quests.
-* <b>Characters</b>: To describe characters.
-* <b>Groups</b>: To describe groups, such as guilds, organizations, etc.
-* <b>Creatures</b>: To describe creatures (that don't fit in the Characters type).
-* <b>Locations</b>: To describe locations, such as countries, areas, cities or buildings.
-* <b>Object</b>: To describe objects, such as important items.
-* <b>Other</b>: For anything that does not fit in the other types.
+| Article Type  | Description                                                           |
+|---------------|-----------------------------------------------------------------------|
+| Sessions      | For session descriptions & notes                                      |
+| Quests        | To describe quests                                                    |
+| Characters    | To describe characters                                                |
+| Groups        | To describe groups, such as guilds, organizations, etc                |
+| Creatures     | To describe creatures (that don't fit in the Characters type)         |
+| Locations     | To describe locations, such as countries, areas, cities or buildings  |
+| Object        | To describe objects, such as important items                          |
+| Other         | For anything that does not fit in the other types                     |
 
 These article types aren't strictly enforced by Worldbuilder. They are all practically identical and the distinction is only there for convenience. The only real differences between article types are:
 
@@ -33,11 +35,13 @@ These article types aren't strictly enforced by Worldbuilder. They are all pract
 ### Header Buttons
 Each article has the following header buttons (at the top of the article):
 
-* <img src="../../img/article/playEditButton.png"> Mode Switch: To switch between [play and edit mode](#playedit-mode)
-* :fontawesome-solid-eye: Show Players: Show the article to your players, see [here](#sharing-articles)
-* :fontawesome-solid-passport: Copy UUID: Copy the UUID of the article to the clipboard
-* :fontawesome-solid-circle-question: Help: Open this documentation
-* :fontawesome-solid-x: Close Window: Close the article
+| Button                                            | Action                                                                |
+|---------------------------------------------------|-----------------------------------------------------------------------|
+| <img src="../../img/article/playEditButton.png">  | Mode Switch: To switch between [play and edit mode](#playedit-mode)   |
+| :fontawesome-solid-eye:                           | Show the article to your players, see [here](#sharing-articles)       |
+| :fontawesome-solid-passport:                      | Copy UUID: Copy the UUID of the article to the clipboard              |
+| :fontawesome-solid-circle-question:               | Help: Open this documentation                                         |
+| :fontawesome-solid-x:                             | Close Window: Close the article                                       |
 
 ### Creating, Deleting & Duplicating Articles
 You can create, delete or duplicate an article in one of the [article tabs](../mainApplication/articles.md) of the main application.
@@ -85,10 +89,26 @@ This will open the article for the selected users, regardless of the [ownership 
 
 <div class="clear"></div>
 
+### Creating Map Notes
+<div class="imgContainer"><img src="../../img/article/mapNote.png"></div>
+You can add Worldbuilder articles to the game canvas as map notes, just like Foundry journal notes. You can either drag article onto the canvas or create a new note through the Journal Notes control buttons.
+
+Either method will open the Create Map Note dialog, where you now have a new Note Type option where you can select between journal entries and Worldbuilder articles.
+
+!!! note "Worldbuilder Map Notes Journal Entry"
+    For map notes to be clickable, they need to have a journal entry assigned to them. For this reason, when you create a Worlbuilder map note, a journal entry is created. This journal entry does not do anything useful, but should not be deleted if you want your Worldbuilder map notes to work.
+
+<div class="clear"></div>
+
 ### Secrets
 Secrets are part of an article that are only visible to users with Owner or Observer [ownership](#ownership).<br>
-You can insert a secret into text sections by setting the text type to Secret (under Block), see [here](./pages.md#secrets) for more info.<br>
-Data in the [sidebar](#sidebar) can also be made secret, as is explained in that section.
+The following parts of an article can be made secret:
+
+* Article pages: Will hide a page, see [here](./pages.md#secrets)
+* Section of a page: Will hide part of a page, see [here](./pages.md#secrets)
+* Sidebar: The entire sidebar can be hidden, see [here](#sidebar)
+* Sidebar images: Will hide images in the sidebar, see [here](#images)
+* Sidebar options: Will hide options, see [here](#sidebar-options)
 
 ### Ownership
 <div class="imgContainer"><img src="../../img/article/ownershipConfig.png"></div>
@@ -133,6 +153,13 @@ The pages are the main text area of articles. See [here](./pages.md) for more in
 
 The sidebar of an article contains article [images](#images), [tags](#tags) and [sidebar options](#sidebar-options).
 
+In edit mode you can hide the sidebar or make it secret using the 2 buttons on the top-right:
+
+| Button                    | Action                                |
+|---------------------------|---------------------------------------|
+| :fontawesome-solid-eye:   | Hides or unhides the sidebar          |
+| :fontawesome-solid-key:   | Makes or unmakes the sidebar secret   |
+
 ### Images
 You can add one or more images to an article. The first image will be used as the article's image in the [main application](../mainApplication/mainApplication.md).
 
@@ -140,19 +167,19 @@ When there is more than 1 image configured, buttons will appear below the image 
 
 Clicking on an image in [play mode](#playedit-mode) will open the image in a separate window, which also has the option to show it to other players.
 
-The following actions can be done when the article is in [edit mode](#playedit-mode):
+While in edit mode, the following buttons are available:
 
-<b>Changing Images</b><br>
-Click on the image to open the image browser, where a new image can be selected.
+| Button                    | Action                            |
+|---------------------------|-----------------------------------|
+| :fontawesome-solid-eye:   | Hides or unhides the image        |
+| :fontawesome-solid-key:   | Makes or unmakes the image secret |
+| :fontawesome-solid-trash: | Deletes the image                 |
+| :fontawesome-solid-plus:  | Creates a new image               |
 
-<b>Adding Images</b><br>
-Click on the + button.
+Additionally, you can perform the following actions:
 
-<b>Removing Images</b><br>
-Click on the :fontawesome-solid-trash: icon.
-
-<b>Renaming Images</b><br>
-Click on the image's name to select the text editor, you can then type a new name.
+* <b>Changing Images</b>: Click on the image to open the image browser, where a new image can be selected
+* <b>Renaming Images</b>: Click on the image's name to select the text editor, you can then type a new name
 
 ### Tags
 You can add [tags](../tags.md) to an article. Clicking on a tag in [play mode](#playedit-mode) will open the [tag configuration](../tags.md#tag-configuration) for that tag.
@@ -175,13 +202,16 @@ The following actions can be done when the article is in [edit mode](#playedit-m
 <b>Changing an Option's Value</b><br>
 The way you change an option's value depends on the [type](./sidebarOptions.md#type) of the option:
 
-* <b>Textbox:</b> Enter in a new value.
-* <b>Number:</b> Enter in a new value.
-* <b>Select:</b> Select a value from the drop-down selector.
-* <b>Article:</b> Dragging an article from the [main application](../mainApplication/mainApplication.md) into the option's box.
-* <b>Article/Text:</b> Adding articles: Dragging an article from the [main application](../mainApplication/mainApplication.md) into the option's box. Adding text: Enter in a new value.
+| Option Type   | How to Change Value                                                                                           |
+|---------------|---------------------------------------------------------------------------------------------------------------|
+| Textbox       | Enter in a new value.                                                                                         |
+| Number        | Enter in a new value.                                                                                         |
+| Select        | Select a value from the drop-down selector.                                                                   |
+| Article       | Dragging an article from the [main application](../mainApplication/mainApplication.md) into the option's box. |
+| Article/Text  | Adding articles: Dragging an article from the [main application](../mainApplication/mainApplication.md) into the option's box.<br>Adding text: Enter in a new value.    |
 
 You can delete articles from options by pressing the :fontawesome-solid-trash: icon.
+The Article and Article/Text options also allow Foundry documents (e.g. actors, scenes, items, etc).
 
 <b>Hiding an Option</b><br>
 You can hide or unhide an option by clicking the :fontawesome-solid-eye: icon.

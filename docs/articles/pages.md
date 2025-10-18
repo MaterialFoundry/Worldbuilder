@@ -8,19 +8,21 @@ If there is only 1 page, the page title will not be displayed.
 To make any changes to pages the article will need to be in [edit mode](./articles.md#playedit-mode).
 <div class="clear"></div>
 
-## Creating and Deleting Pages
+While in edit mode, you have access to the following buttons:
 <div class="imgContainer"><img src="../../img/article/createDeletePages.png"></div>
-Press the :material-plus: button to create a new page, press the :fontawesome-solid-trash: icon to delete a page.
 
-## Reordering Pages
-You can reorder pages by dragging one page button onto another.
+| Button                                        | Action                                                            |
+|-----------------------------------------------|-------------------------------------------------------------------|
+| :material-dots-square:<br>Or selected icon    | Opens the [Icon Picker](#icon-picker) to add an icon to the page  |
+| :fontawesome-solid-eye:                       | Hides or unhides the page                                         |
+| :fontawesome-solid-key:                       | Makes or unmakes the page secret                                  |
+| :fontawesome-solid-trash:                     | Deletes the page                                                  |
+| :fontawesome-solid-plus:                      | Creates a new page                                                |
 
-## Page Title
-Click the title to select the textbox, and rename it.
+Additionally, you can perform the following actions:
 
-## Page Icon
-You can add icons before the page title.<br>
-Press the :material-dots-square: icon (or previously selected icon) to open the [Icon Picker](#icon-picker).
+* <b>Reordering Pages</b>: You can reorder pages by dragging one page button onto another
+* <b>Changing a Page Title</b>: Click the title to select the textbox, and write the new name
 
 ## Text Editor
 <div class="imgContainer"><img src="../../img/article/textEditor.png"></div>
@@ -48,7 +50,7 @@ You could, for example, insert a button to open a different article, or insert a
 There are 3 ways to add page inserts to your page:
 
 1. Dragging a Foundry document, worldbuilder article, or worldbuilder widget onto the page. This will place the insert at the location of the cursor.
-2. Press the :fontawesome-solid-book-atlas: icon on the page editor toolbar, select the type of insert, and fill in the details in the popup.
+2. Press the :fontawesome-solid-globe: icon on the page editor toolbar, select the type of insert, and fill in the details in the popup.
 3. Manually entering the widget using the correct syntax (see below).
 
 ### Insert Syntax

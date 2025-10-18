@@ -28,6 +28,7 @@ Want to try it first? Give the free [demo](./demo.md) version a try.
 ## Combatibility
 
 <b>Foundry VTT</b>: v12-v13<br>
+<b>System incompatibilities</b>: None known<br>
 <b>Module incompatibilities</b>: None known
 
 ## Feedback & Issues

@@ -8,6 +8,8 @@ Worldbuilder provides 2 methods to prevent data loss, both accessible from the [
 * [Automatic Backups](#automatic-backups)
 * [Importing & Exporting Data](#importing-exporting)
 
+Worldbuilder also offers the option to use the same Worldbuilder data for multiple worlds on the same server through the [Data Id setting].
+
 ## Automatic Backups
 <div class="imgContainer"><img src="../img/settings/backups.png"></div>
 Worldbuilder can automatically create backups of your Worldbuilder data. These backups are stored locally on your Foundry server, and should therefore not be considered "safe backups". Deleting your Worldbuilder data folder or any other form of data loss (e.g. hard drive failure) will not save your data.
@@ -49,3 +51,21 @@ By pressing the "Import" button, you can select a `.worldbuilder` file to import
 
 !!! warning "Importing data will overwrite your current data and is irreversible"
     When you import data, your current data will be overwritten. This means that this data is not recoverable. It is advisable to first make a backup of your current data.
+
+<div class="clear"></div>
+
+## Data Id
+By default, each Foundry world has its own, independent, dataset for Worldbuilder. This means that articles in one world are not accessible to other worlds. You can change this by changing the data id in the [settings](./settings.md).
+
+The default data id is the same as the world's id. You can find your world's id in one of the following ways:
+
+* In the console, run `game.world.id`
+* <div class="imgContainer"><img src="../img/settings/worldId.png"></div>In the [Game Worlds](https://foundryvtt.com/article/game-worlds/) tab of the Foundry setup, right click your world and select Edit World. The world id will be the second textbox in the Data Path field (see the image).
+
+You can access the data from another world by setting that world's id as the Data Id. You will no longer have access to the Worldbuilder data that you had created using the original Data Id, but this data is not lost. Setting the Data Id back to that world's id will allow you to access that data again.
+
+When two or more worlds share Worldbuilder data, any changes are made bi-directionally. This means that changes in world 1 will also be visible in world 2, and vice versa.
+
+If you set Data Id to a value that is not an existing world id, a new dataset will be created.
+
+Currently, it is only possible to share all of Worldbuilder's data. Selectively sharing specific articles will be added in the future.

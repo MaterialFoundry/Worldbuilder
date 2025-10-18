@@ -20,7 +20,7 @@ The configuration sidebar has 3 tabs:
 
 * <b>[Basics](#basics):</b> Basic widget configuration, such as the image source, widget name and view position
 * <b>[Items](#items):</b> Configuring map items
-* <b>[Legend](#legend-1):</b> Configurating the map legend
+* <b>[Legend](#legend_1):</b> Configurating the map legend
 
 ## Basics
 <div class="imgContainer" style="max-width:50%"><img src="../../img/widgets/map-config-basics.png"></div>
