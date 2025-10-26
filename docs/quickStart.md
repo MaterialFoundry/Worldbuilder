@@ -25,7 +25,7 @@ We will create a basic Character article, but the following will apply to all ar
 ### Creating an Article
 1. Open the Characters tab (:fontawesome-solid-user:) of the main application, you now have 2 options to create an article, try them both:
     1. Click the Create New button to create a new article. This article will be empty.
-    2. Drag an actor from the Actors sidebar tab onto the Worlbuilder application, in the popup make sure Article Type is set to Characters, and press Import. This will create a new article that will be pre-filled (as far as Worldbuilder is able to fill it, see [here](./articles/articles.md#document-import) for more info).
+    2. Drag an actor from the Actors sidebar tab onto the Worlbuilder application, in the popup make sure Article Type is set to Characters, and press Import. This will create a new article that will be pre-filled (as far as Worldbuilder is able to fill it, see [here](./articles/documentImport.md) for more info).
 <div class="imgContainer"><img src="../img/article/newArticle.png"></div>
 2. A article window should have opened. In the header of the article you can switch between Play and Edit mode by clicking the Change Mode slider (<img src="../img/article/playEditButton.png">). Switch it to Edit mode (the slider will turn green).
 3. Change the name/title of the article by writing something in the Title field.

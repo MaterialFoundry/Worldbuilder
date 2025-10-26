@@ -47,28 +47,13 @@ Each article has the following header buttons (at the top of the article):
 You can create, delete or duplicate an article in one of the [article tabs](../mainApplication/articles.md) of the main application.
 
 <b>Creating Articles</b><br>
-Click the "+ Create New" button or use the [document import](#document-import) feature.
+Click the "+ Create New" button or use the [document import](./documentImport.md) feature.
 
 <b>Deleting Articles</b><br>
 Right-click an article and press the ":fontawesome-solid-trash: Delete" button.
 
 <b>Duplicating Articles</b><br>
 Right-click an article and press the ":fontawesome-solid-copy: Duplicate" button.
-
-#### Document Import
-It is possible to create new articles by importing Foundry documents (actors, scenes, items, etc) into Worldbuilder. This is as simple as dragging the document from the Foundry sidebar onto the Worldbuilder application. This will open a popup to ask you the article type that the document should be imported as, click Import to create the new article.
-
-Worldbuilder will attempt to fill in as much of the article as possible. What exactly is filled in depends on the document type, your gaming system, and your configured [sidebar options](#sidebar-options):
-
-| Document Type | Corresponding Article Type | Filled data |
-|---------------|----------------------------|-------------|
-| Actor         | Characters                    | Title: Actor's name<br>Linked: Linked to actor<br>Pages\*: Biography page from character sheet<br>Images: Actor's image<br>Sidebar Options\*\*: From actor data |
-| Scene         | Locations                     | Title: Scene's name<br>Linked: Linked to scene<br>Pages: From scene's linked journal entry<br>Images: Scene's background image |
-| Item          | Object                        | Title: Item's name<br>Linked: Linked to item<br>Pages*: Item's description<br>Images: Item's image |
-| Journal       | Other                         | Title: Journal's name<br>Linked: Linked to journal<br>Pages: Journal pages |
-
-\* Depending on your gaming system, Worldbuilder may or may not be able to parse text from documents to generate pages. This has been tested on DnD5e and PF2E.<br>
-\*\* Depending on your gaming system, Worldbuilder may or may not be able to parse select options from documents. It will attempt to match the name of a sidebar option with a key within the document's `system` object. This will only work for some sidebar options. Better support will be added in the future.
 
 ### Opening Articles
 You can open an article in one of the [article tabs](../mainApplication/articles.md) of the main application, by clicking one of the articles.
@@ -138,7 +123,7 @@ The main section of articles contain the title of the article, (optionally) link
 You can edit the title of the article when the article is in [edit mode](#playedit-mode).
 
 ### Linked Documents
-It is possible to link Foundry documents (Actors, Scenes, etc) to a Worldbuilder article. Linked documents show up at the top of the article, clicking them will open the relevant sheet of that document.
+It is possible to link Foundry documents (Actors, Scenes, etc) to a Worldbuilder article. Linked documents show up at the top of the article, clicking them will open the relevant sheet of that document. Depending on how the [sidebar options](#sidebar-options) are configured, some sidebar options might be automatically populated and updated.
 
 You can change which documents are linked by going into [edit mode](#playedit-mode) and dragging a document (from the Foundry sidebar) onto the box, or deleting it by clicking on the :fontawesome-solid-trash: icon of existing documents.
 
@@ -204,7 +189,7 @@ The way you change an option's value depends on the [type](./sidebarOptions.md#t
 
 | Option Type   | How to Change Value                                                                                           |
 |---------------|---------------------------------------------------------------------------------------------------------------|
-| Textbox       | Enter in a new value.                                                                                         |
+| Text          | Enter in a new value.                                                                                         |
 | Number        | Enter in a new value.                                                                                         |
 | Select        | Select a value from the drop-down selector.                                                                   |
 | Article       | Dragging an article from the [main application](../mainApplication/mainApplication.md) into the option's box. |
@@ -218,3 +203,16 @@ You can hide or unhide an option by clicking the :fontawesome-solid-eye: icon.
 
 <b>Making an option a secret</b><br>
 You can make an option a secret by clicking the :fontawesome-solid-key: icon.
+
+### System Link
+Depending on your gaming system, Worldbuilder can link some "Text" or "Number" sidebar options to data from a [linked document](#linked-documents). This is only available for Character and Object articles when they are linked to actor or item documents.
+
+For example, it is possible to link the "age" of an actor to a corresponding "Age" sidebar option. This can have the following effects:
+
+* When the data of the actor is changed in its character sheet, the sidebar option will also be updated
+* When the sidebar option is changed, the actor is also updated (not all linked data supports this)
+* When an actor is [imported](./documentImport.md), the sidebar option will be automatically populated
+
+It is required to assign a System Link value to a sidebar option to enable this feature, you can do so in the [sidebar options configuration](./sidebarOptions.md). When a System Link is assigned and a document is linked to the article, you can enable or disable the link by clicking the :octicons-link-16: icon.
+
+Depending on the configured System Link, it may or may not be possible to manually change the sidebar option's value. If a linked value is changed in the article, its corresponding document will also be updated, and vice-versa.

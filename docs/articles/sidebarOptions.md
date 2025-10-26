@@ -1,7 +1,7 @@
 <div class="imgContainer"><img src="../../img/article/sidebarConfig.png"></div>
 The Options Configurator configures which options will be available in the [sidebar](./articles.md#sidebar) of articles.
 
-The sidebar options for each article type can be configured independently.
+The sidebar options for each article type are configured independently.
 
 You can open the Sidebar Options Configuratior in the following ways:
 
@@ -11,10 +11,17 @@ You can open the Sidebar Options Configuratior in the following ways:
 ### Name
 The name of the option as it will appear in the sidebar.
 
+### System Link
+Only available for Character and Object articles.
+Select which system-specific document data should be assigned to the sidebar option.<br>
+The available options will depend on your gaming system.
+
+See [here](./articles.md#system-link) for more info.
+
 ### Type
 The type of the option, you can select one of the following types:
 
-* <b>Textbox:</b> Accepts any kind of text input.
+* <b>Text:</b> Accepts any kind of text input.
 * <b>Number:</b> Accepts numeric inputs.
 * <b>Select:</b> Allows the selection of pre-defined values.
 * <b>Article:</b> Accepts Worldbuilder articles by dragging them from the [main application](../mainApplication/mainApplication.md) into the option's box.

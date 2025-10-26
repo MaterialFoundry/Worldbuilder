@@ -1,9 +1,10 @@
 <div class="imgContainer"><img src="../../img/article/pages.png"></div>
 Each article can contain one or more pages, which are essentially text documents.
 
-The pages of an article will show up below the article's title (or linked documents section, if configured). The displayed page is highlighted, and you can navigate to another page by pressing the page's title.
+Depending on how "Article Page Navigation" is configured in the [settings](../settings.md#article-page-navigation), the pages of an article will either show up below the article's title (or linked documents section, if configured), or as part of a table of contents.<br>
+You can navigate to another page by pressing the page's button or by clicking on the page in the table of contents.<br>
 
-If there is only 1 page, the page title will not be displayed.
+If there is only 1 page, page buttons will not be displayed.
 
 To make any changes to pages the article will need to be in [edit mode](./articles.md#playedit-mode).
 <div class="clear"></div>

@@ -7,10 +7,10 @@ Each separate word is a separate search term, so you will get results if any of 
 Search terms are case-insensitive.
 
 <b>Examples:</b><br>
-Searching `t` will result in all articles that contain "t" in their name.<br>
-Searching `tavern` will result in all articles that contain "tavern" in their name.<br>
-Searching `the old tavern` will result in articles that contain "the", "old" or "tavern" in their name.<br>
-Searching `"the old tavern"` will result in articles that contain "the old tavern" in their name.
+Searching `t` will result in all articles that have "t" in their name.<br>
+Searching `tavern` will result in all articles that have "tavern" in their name.<br>
+Searching `the old tavern` will result in articles that have "the", "old" or "tavern" in their name.<br>
+Searching `"the old tavern"` will result in articles that have "the old tavern" in their name.
 
 ## Searching by Tag
 You can search for articles that have a certain tag.<br>
@@ -24,8 +24,19 @@ Searching `tag:"house lenora"` will result in articles that have the "house leno
 Searching `tag:[house "house lenora"]` will result in articles that have the "house" or "house lenora" tag.
 
 <b>Wrong examples:</b><br>
-Searching `tag:hou` will <u>not</u> result in articles that have the "house" tag, articles that have the "hou" tag.<br>
+Searching `tag:hou` will <u>not</u> result in articles that have the "house" tag, but articles that have the "hou" tag.<br>
 Searching `tag:house lenora` will <u>not</u> result in articles that have the "house lenora" tag, but articles that either have the "house" tag or have "lenora" in their name.<br>
+
+## Searching by Content
+You can search for articles based on their content (what's written in their pages).<br>
+This is very similar to [searching by tag](#searching-by-tag), except that you replace `tag:` with `content:`.
+
+<b>Examples:</b><br>
+Searching `content:tavern` will result in all articles that have the word "tavern" on one of their pages.<br>
+Searching `content:"the old tavern"` will result in all articles that have the words "the old tavern" (in this exact order) on one of their pages.
+
+<b>Wrong examples:</b><br>
+Searching `content:old tavern` will <u>not</u> result in articles that have the words "the old tavern" on one of their pages. Instead it will return articles that have the word "old" on one of their pages <u>and</u> articles that have "tavern" in their name.
 
 ## Searching by Sidebar Option
 [Sidebar options](../articles/sidebarOptions.md) are the configurable settings in the [sidebar](../articles/articles.md#sidebar) of articles.<br>

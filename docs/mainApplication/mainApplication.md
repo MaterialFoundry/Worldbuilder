@@ -29,3 +29,7 @@ The application can be divided into 3 parts:
     * <b>Widgets:</b> Similar to the article tabs, but for [widgets](../widgets/widgets.md).
     * <b>Tags:</b> Similar to the article tabs, but displays [Tags](../tags.md).
     * <b>[Settings](../settings.md):</b> Used for configuring the module.
+
+## Customization
+There are some customization options for the main application, such as changing where the tabs are located (right, left, or top of the app), or the icons, names and order of the tabs.<br>
+You can configure this in the [settings tab](../settings.md).

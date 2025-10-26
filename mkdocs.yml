@@ -17,6 +17,7 @@ nav:
     - Articles: articles/articles.md
     - Pages: articles/pages.md
     - Sidebar Options: articles/sidebarOptions.md
+    - Document Import: articles/documentImport.md
   - Widgets:
     - Widgets: widgets/widgets.md
     - Map: widgets/map.md
