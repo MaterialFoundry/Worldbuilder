@@ -54,7 +54,7 @@ You can navigate to a different page by pressing one of the page buttons, or by 
 The page headers in the table of contents are automatically generated, and pressing them will scroll the page to that header.
 
 <div class="imgContainer center">
-    <img src="../img/settings/articlePagenavigation.png">
+    <img src="../img/settings/articlePageNavigation.png">
     <p class="caption">The different article page navigation options, from left to right: "Table of Contents - Sidebar", "Table of Contents - Column" and "Buttons".</p>
 </div>
 
