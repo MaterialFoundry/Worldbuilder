@@ -1,5 +1,23 @@
 Changes between module versions are documented here.<br>
 
+??? changelog "v1.0.4 - 05-11-2025"
+    ## Highlights
+    This version of Worldbuilder adds compatibility with [Material Deck](https://foundryvtt.com/packages/materialdeck-premium) (Material Deck v2.1.1+ required).<br>
+    Besides that, there are a number of bug fixes.
+
+    ## Full Changelog
+    ### Additions
+    * Added compatibility with Material Deck
+
+    ### Fixes
+    * Checking for the existence of a backup folder and creating one when it's missing now happens earlier during initiation. So, after deleting a world's Worldbuilder data, errors regarding the backup folder not existing should no longer occur.
+    * Added some checks to see if the module has finished initializing before certain actions can occur (e.g. in hooks), to prevent unnecessary errors.
+    * Fixed issue where the Worldbuilder application would not load for non-GMs if no tags existed.
+    * Fixed multiple issues due to sidebar options not existing after clearing data (not able to import Foundry documents, not able to create new sidebar options).
+    * Link button insert will now navigate to the web, even if "https://" is note specified.
+    * Video button insert now has a "video" icon instead of "image" icon.
+    * Fixed issue where dragging a widget or tag onto an article would not create a button insert.
+
 ??? changelog "v1.0.3 - 26-10-2025"
     ## Highlights
     ### UI Changes/Additions
