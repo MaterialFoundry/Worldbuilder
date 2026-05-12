@@ -5,6 +5,7 @@ Widgets are objects that can be inserted into an article as an interactive eleme
 The following widget types are available:
 
 * <b>[Map](./map.md):</b> Displays a map (or any other kind of image or video) onto which you can place clickable icons and labels
+* <b>[Hierarchy](./hierarchy.md):</b> Allows you to create hierarchy structures, such as family trees
 
 ### Inserting into an Article
 See [here](../articles/pages.md#page-inserts) for more info on inserting widgets.

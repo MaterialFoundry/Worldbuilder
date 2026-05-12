@@ -1,5 +1,7 @@
 It is possible to create new articles by importing Foundry documents (actors, scenes, items, etc) into Worldbuilder. This is as simple as dragging the document from the Foundry sidebar onto the Worldbuilder application. This will open a popup to ask you the article type that the document should be imported as, click Import to create the new article.
 
+Similarly, you can import documents into existing articles by dragging the document onto the article's table of contents or page buttons.
+
 Worldbuilder will attempt to fill in as much of the article as possible. What exactly is filled in depends on the document type, your gaming system, and your configured [sidebar options](./sidebarOptions.md).
 
 | Document Type | Corresponding Article Type | Filled data |

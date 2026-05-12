@@ -1,4 +1,136 @@
 Changes between module versions are documented here.<br>
+??? changelog "v1.1.0 - 13-05-2026"
+    This update makes Worldbuilder compatible with Foundry v14, and it introduces a new Hierarchy widget.
+
+    ## Highlights
+    ### Foundry v14 compatibility
+    Worldbuilder is now fully compatible with Foundry v14. This means that compatibility with Foundry v12 has been dropped.
+
+    One of the new features of Foundry v14 is "detachable windows" (essentially pop-out windows), Worldbuilder is mostly compatible with it. You can detach most Worldbuilder windows, however, widgets do not work properly yet.<br>
+    You can automatically detach an article by clicking it (in the main app or through one of the button inserts) while holding the alt key.
+
+    ### New Hierarchy Widget
+    This version introduces a new Hierarchy widget. This widget can be used to display, for example, family trees or organisational structures. Create items representing characters, organizations, etc, and draw lines between them to indicate how these relate to each other.<br>
+    Hierarchies can be added to articles in the same way you can add map widgets and are created and edited similarly.
+
+    ### Widget Default Item Config
+    You can now configure the default config for widget items (for each widget separately). This means that, for example, you can easily change the icon color for all map items. For each config option you can choose if you want an item to use the default config or its own config.
+
+    ### New Configuration Options for Map Widgets
+    Map widgets can now be customized further with, amongst others, the addition of background image positioning, background opacity, item icon and label opacity. The legend has gotten a lot of new configuration options such as a configurable background color and opacity, border thickness and radius, configurable width, etc.
+
+    ### Improved Data Management
+    To reduce the chance of data corruption several measures have been taken, such as the introduction of a write buffer to make sure the writing of data is performed in a controlled manner. If a file cannot be read the user will now be notified with some tips on how to proceed, which should prevent accidental overwriting of data.
+
+    ## Full Changelog
+    ### Additions:
+    * (Foundry v14 only) You can open articles, documents, etc detached (pop-out) by holding the alt key when opening the article. This (currently) does not work properly for widgets.
+    * You can now configure whether users are allowed to create new articles (they will automatically get Owner permission), or delete owned articles. This can be configured in the Settings tab, under Permissions.
+    * The widget configuration is now divided into expandable sections to make navigation easier.
+    * Map widgets now have a "Default Item Config" section in the "Basics" tab, these settings will be applied to all items, unless otherwise specified.
+    * Expanded the "Basics" tab of map widgets:
+        * Dimensions can be configured manually
+        * Added background image positioning and scaling
+        * Added background color
+        * Added video playback and mute settings
+        * Added background opacity
+    * Expanded the "Items" tab for map widgets:
+        * Added icon opacity
+        * Added label opacity
+    * Expanded the "Legend" tab of map widgets:
+        * Added configurable background color
+        * Added background opacity
+        * Added border thickness
+        * Added border radius
+        * Added width
+        * Added margin
+        * Added title font
+        * Added title font size
+
+    ### Fixes:
+    * Dragging articles onto a `Article` or `Article/Text` sidebar option did not work, this is now fixed.
+    * When panning a map widget and moving the mouse out of the widget's window, the panning would not stop when the button was released. This is now fixed.
+    * Fixed issue where worldbuilder map notes pointing to non-existent articles would throw an error and prevent the scene from loading.
+    * Fixed "favorites" option not showing for widgets in the main app.
+    * Fixed issue where the page identifier and level were not imported if an article page was imported into a different article.
+    * Changing a map widget item's type now immediately updates the item.
+    * Changing the order of widget items now immediately updates which item should be on top.
+    * Icon outline in the map widget is now properly hidden if the icon is set to "None".
+
+    ### Other:
+    * Improved data management: Changes are now written to a write buffer which periodically writes all buffered data. This helps prevent data corruption and reduces the amount of writes.
+    * Made significant changes to how widgets are handled behind the scenes, making it much more flexible.
+    * When a map widget is in edit mode, selecting an item will now automatically switch to the "Items" page in the configuration section.
+    * Worldbuilder automatically creates log files which can help with debugging
+    * Improved logging for debug purposes: Log files are now stored for the last 10 sessions/refreshes, and they can be easily downloaded by calling `worldbuilder.api.downloadLogs()`; 
+
+    ### Known Issues:
+    * (Foundry v14) There are some issues with widgets in detached windows related to panning, hovering, and probably other features.
+
+
+??? changelog "v1.0.5 - 16-01-2026"
+    This update introduces a lot of quality of life improvements, some performance improvements and some bug fixes.
+
+    ## Highlights
+    ### Article Loading Improvements
+    In previous versions, when an article was opened, Foundry would load all pages of that article immediately. This could cause some performance issues on very large articles, especially when switching between edit and play mode.<br>
+    In this version this has been changed. Now, only the selected page is actually loaded. This means that loading an article is much faster.
+
+    ### Moved Page Configuration
+    Instead of having all the page configuration done within the table of contents or page button, a separate section has been added right above the text editor. This keeps the table of contents and page buttons clear from all the clutter of buttons, while giving the space for additional configuration options.
+
+    ### More Page Linking/Handling Options
+    You can now drag pages or page headings from one article onto another article (in edit mode) to create a button insert to open that page/heading.
+    
+    Importing articles, article pages, or Foundry documents into existing articles is now possible by dragging them onto the table of contents or page buttons.
+
+    A new "Page Identifier" option has been added to pages which allows you to replace de default page numbering (in the table of contents), and allows you to easily create map notes that visibly link to specific pages (e.g. room descriptions).
+
+    ### Table of Contents Improvements
+    The table of contents now displays which section of a page is currently visible, which can help with navigation.
+
+    Basic page hierarchies can be made using the new `Page Level` setting, which shifts the page title slightly.
+
+    ### Map Note Improvements
+    Previously you could drop articles onto the canvas to create a map note for that article. This has been expanded with the ability to drag pages and page headings (from the table of contents) onto the canvas.
+
+    The note configuration now has a `Headings` option to open a page on a specific heading.
+
+    `Page Identifier` can now be used to create map notes for, for example, opening pages to room descriptions. These notes have a specific icon (circle with the page identifier as text within it), distinguishing it from normal map notes.
+
+    ## Full Changelog
+    ### Additions:
+    * You can now drag article pages onto another article to create a button to open that page.
+    * You can now drag headings within article pages onto another article to create a button to open that page and navigate to the heading.
+    * Within an article you can now use `@WB[#heading]{title}` to create a button to navigate to a heading on the same page (lowercase, spaces must be replaced with `-`).
+    * Added `Page Identifier`, which replaces the default page numbering and can be used as an identifier when dragging the page onto the canvas (see below). This is automatically imported from DnD5e `Map Location` journal pages.
+    * You can now add rolls to pages. This follows the same rules as [core Foundry inline rolls](https://foundryvtt.com/article/dice/). E.g. `[[1d20]]` will create a button that displays the result of a d20 roll, `[[/r 1d20]]` will create a button to roll a d20. An addition to the core roll handling is that you can add labels, e.g. `[[/r 1d20]]{piercing damage}`. And you can reroll "immediate inline rolls" (e.g. `[[1d20]]`) by clicking on them.
+    * Secrets on article pages now have a button that allows owners of that article to reveal or hide the secret. Secret background will change based on secret status (purple = secret, green = revealed).
+    * Viewposition of a page is now maintained when saving a page.
+    * You can now create button inserts to open compendium packs or the contents of a compendium pack.
+    * Added system integration for Shadowrun 5e.
+    * The TOC now displays which section of the page is currently visible.
+    * Added `Page Level` which allows you to indent the page title in the TOC to create hierarchies.
+    * You can now change the page order by dragging pages around in the TOC.
+    * You can now drag pages, articles or documents onto the table of contents or page buttons to import them.
+    * You can now drop pages or page headings (from the TOC) from an article onto the canvas to create a map note to that page and/or heading.
+    * Map notes content selection has been expanded with a `Headings` option to select a specific heading on an article's page. Heading option is only visible if a page with headings has been selected.
+    * Map notes content selection has been expanded with a `Use Page Identifier` option, only visible if a page has been selected. If enabled, and the page has a page identifier (see above), a circular map note will be created instead of a normal map note. This map note has the page identifier as text in the circle, and uses `Icon Tint` for the background color and `Text Color` for the text color (both as configured in the Note Config).
+
+    ### Fixes:
+    * Ownership config now has a maximum height so the "Save Changes" button is always visible, no matter how many players there are.
+    * When importing a journal entry, the correct page order is now maintained.
+    * Fixed issue where article thumbnails were unnecessarily deleted and recreated after each refresh.
+    * Fixed TOC not correctly hiding hidden or secret pages.
+
+    ### Other:
+    * Editing a page title, icon, visibility, etc has been moved from the page button/table of contents to a separate section above the text editor.
+    * The way article pages are loaded has been changed. Instead of loading all pages at once, pages are now only loaded when they are opened. This greatly improves performance when opening big articles, while (slighly) reducing performance when a new page is opened.
+    * Article page buttons: Moved scrollbar down a bit to add more clearance between the scrollbar and buttons.
+    * Secrets on article pages have been given a lighter background color to make them more visible.
+    * When a new article is created, it automatically creates a first (empty) page.
+    * Changed the default `Article Page Navigation` to `Table of Contents - Column`.
+    * (Temporarily) disabled video autoplay in articles due to some (for now) unsolved issues.
 
 ??? changelog "v1.0.4 - 05-11-2025"
     ## Highlights
@@ -23,7 +155,7 @@ Changes between module versions are documented here.<br>
     ### UI Changes/Additions
     It is now possible to change the icon, name and order of the tabs of the main application. The name and icon change will be applied throughout all of Worldbuilder (e.g. article inserts will display the new icon). The position of the tabs can also be changed so they're on the left, or the top of the application. See [here](./settings.md#tab-configuration).
 
-    Articles have new page navigation options. Besides the buttons that were already there, you can instead choose to display a table of contents that will be automatically populated with pages and headers of the article. You can click on the pages and headers in the table of contents to navigate to the selected page/header. See [here](./settings.md#article-page-navigation).
+    Articles have new page navigation options. Besides the buttons that were already there, you can instead choose to display a table of contents that will be automatically populated with pages and headings of the article. You can click on the pages and headings in the table of contents to navigate to the selected page/heading. See [here](./settings.md#article-page-navigation).
 
     ### Improved Gaming System Integration
     Sidebar options can now be configured to automatically parse specific data from Actor and Item documents (e.g. an actor's age, item's weight, etc). This can be configured that changes in the document are automatically updated in the article, and vice versa. See [here](./articles/articles.md#system-link) for more information on how to configure this. Worldbuilder will also do a better job at converting biographies, descriptions and GM notes into pages. 
@@ -46,7 +178,7 @@ Changes between module versions are documented here.<br>
     * The tabs of the main application can now be moved to the top or left.
     * Added configurable article page navigation. You can now choose between:
     * Buttons: Buttons at the top that open a page when clicked (as it was previously)
-    * Table of Contents - Column: A table of contents that is displayed as a column next to the page. Clickable to open pages or navigate to a page header
+    * Table of Contents - Column: A table of contents that is displayed as a column next to the page. Clickable to open pages or navigate to a page heading
     * Table of Contents - Sidebar: Similar to the Column option, but the table of contents is displayed as a sidebar on the left of the article
 
     #### Gaming System Integration
@@ -61,7 +193,7 @@ Changes between module versions are documented here.<br>
     * You can now drag & drop article/document buttons from one article onto another article or onto a document (such as journal entries, character sheets, etc).
     * Dragging article/document buttons from an article onto the canvas will create a token or map note.
     * When importing a document, the ownership of that document is also applied to the article.
-    * (Foundry v13 only) Linked documents now have a Worldbuilder icon in their header where you can open the relevant articles. Not all systems might be fully supported.
+    * (Foundry v13 only) Linked documents now have a Worldbuilder icon in their heading where you can open the relevant articles. Not all systems might be fully supported.
     * You can now search articles by their content: `content:"search term"`
 
     ### Fixes

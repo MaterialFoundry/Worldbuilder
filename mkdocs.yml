@@ -18,9 +18,11 @@ nav:
     - Pages: articles/pages.md
     - Sidebar Options: articles/sidebarOptions.md
     - Document Import: articles/documentImport.md
+    - Map Notes: articles/mapNotes.md
   - Widgets:
     - Widgets: widgets/widgets.md
     - Map: widgets/map.md
+    - Hierarchy: widgets/hierarchy.md
   - Tags: tags.md
   - Settings: settings.md
   - Data Management: dataManagement.md

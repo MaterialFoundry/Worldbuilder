@@ -9,21 +9,39 @@ If there is only 1 page, page buttons will not be displayed.
 To make any changes to pages the article will need to be in [edit mode](./articles.md#playedit-mode).
 <div class="clear"></div>
 
-While in edit mode, you have access to the following buttons:
-<div class="imgContainer"><img src="../../img/article/createDeletePages.png"></div>
+While in edit mode, you have access to the following options:
+<div class="imgContainer"><img src="../../img/article/pageEditButtons.png"></div>
 
-| Button                                        | Action                                                            |
+| Option (from left to right)                   | Action                                                            |
 |-----------------------------------------------|-------------------------------------------------------------------|
-| :material-dots-square:<br>Or selected icon    | Opens the [Icon Picker](#icon-picker) to add an icon to the page  |
+| Page Identifier                               | Sets the [page identifier](#page-identifier)                      |
+| Page Level                                    | Sets the [page level](#page-level)                                |
+| Page Title                                    | Sets the page title                                               |
+| :fontawesome-solid-icons:                     | Opens the [Icon Picker](#icon-picker) to add an icon to the page  |
 | :fontawesome-solid-eye:                       | Hides or unhides the page                                         |
 | :fontawesome-solid-key:                       | Makes or unmakes the page secret                                  |
 | :fontawesome-solid-trash:                     | Deletes the page                                                  |
-| :fontawesome-solid-plus:                      | Creates a new page                                                |
 
 Additionally, you can perform the following actions:
 
-* <b>Reordering Pages</b>: You can reorder pages by dragging one page button onto another
-* <b>Changing a Page Title</b>: Click the title to select the textbox, and write the new name
+* <b>Creating New Pages</b>: You can create new pages. The methods depends on the configured [article page navigation setting](../settings.md#article-page-navigation):
+    * Page Buttons: Pressing the `+` icon to the right of all page buttons
+    * Table of Contents: Pressing the `Create new page` button at the bottom of the table of contents
+* <b>Reordering Pages</b>: You can reorder pages by dragging one page (button) onto another
+* <b>Importing a page from another article or a journal</b>: Drag a page (button) from another article or journal onto this article's page buttons or table of contents
+* <b>Importing another article or Foundry document</b>: Drag an article or document onto this article's page buttons or table of contents. All pages of the article will be imported, and in the case of a document Worldbuilder will attempt to extract pages from the document, see [here](documentImport.md)
+
+### Page Identifier
+Each page can have its own page identifier. This identifier serves 2 purposes:
+
+* <b>Table of Contents:</b> If a page has an identifier, that identifier will be displayed instead of the page's number
+* <b>Map Notes:</b> If a map note is created to open the page, the note can be configured to display the page identifier, instead of a normal icon. See [here](./mapNotes.md) for more info.
+
+If a DnD5e `Map Location` journal page is [imported](./documentImport.md), the page identifier will be automatically parsed.
+
+### Page Level
+Page level is only available if the [article page navigation setting](../settings.md#article-page-navigation) is set to one of the table of contents settings. In this case, the page's name in the table of contents is shifted to the right. The amount it is shifted depends on the level, where a higher level means a larger shift.<br>
+This can be used to create simple page hierarchies.
 
 ## Text Editor
 <div class="imgContainer"><img src="../../img/article/textEditor.png"></div>
@@ -118,6 +136,26 @@ The label that will be displayed on the button.
 | PDF insert                    | Embeds a PDF          | `!PDF[pdfUrl]`            | Style tags    |
 | Icon insert                   | Embeds an icon                          | `!ICON[fontAwesomeIcon]`  | Style tags  |
 
+### Rolls
+You can add rolls to pages, similar to how you can add them to [journal entries](https://foundryvtt.com/article/dice/).<br>
+Rolls come in 2 variants:
+
+* <b>Immediate Rolls:</b> These rolls are rolled when the page is opened and display the result. Clicking them allows you to re-roll.
+* <b>Deferred Rolls:</b> These rolls are rolled when you click on them. The result will be printed in the chat.
+
+Deferred rolls start with `/r`, while immediate rolls do not.
+
+Rolls can have an optional label, which will be displayed to the right of the roll data.
+
+The syntax is as follows:<br>
+`[[roll data]]{label}`<br>
+Examples:
+```
+[[1d10]] //Immediate roll to roll 1d10
+[[/r 1d20 + 5]] //Deferred roll to roll 1d20 + 5
+[[1d8 + 3]]{bludgeoning damage} //Immediate roll to roll 1d8 + 3 with 'bludgeoning damage' label
+```
+
 ## Secrets
 <div class="imgContainer"><img src="../../img/article/pageSecrets.png"></div>
 [Secrets](./articles.md#secrets) are parts of an article that are only visible to selected users.
@@ -125,6 +163,11 @@ The label that will be displayed on the button.
 You can make paragraphs secret by selecting the paragraph, then clicking the left-most option in the toolbar, selecting Block and then Secret.
 
 You can also create a secret block first using the same method, and then filling it with text.
+
+While in play mode, a `reveal` or `hide` button is displayed above a secret block for owners of the article. Clicking this will either reveal the secret to all players (that are allowed to view the page), or hide it.
+
+Hidden secret blocks will have a purple background, while revealed ones have a green background.
+
 <div class="clear"></div>
 
 ## Icon Picker

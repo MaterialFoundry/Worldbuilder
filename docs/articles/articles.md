@@ -130,6 +130,13 @@ You can change which documents are linked by going into [edit mode](#playedit-mo
 ### Pages
 The pages are the main text area of articles. See [here](./pages.md) for more information on them.
 
+Please note that you can configure how you want to display the pages: as buttons, or as a table of contents, see the image below. You can configure this in the [settings](../settings.md#article-page-navigation).
+
+<div class="imgContainer center">
+    <img src="../../img/settings/articlePageNavigation.png">
+    <p class="caption">The different article page navigation options, from left to right: "Table of Contents - Sidebar", "Table of Contents - Column" and "Buttons".</p>
+</div>
+
 ## Sidebar
 <div class="imgContainer">
     <img src="../../img/article/sidebar.png">

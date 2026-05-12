@@ -11,6 +11,12 @@ If you have an idea for a great feature, please navigate to [Feedback & Issues](
 ??? changelog "Article Templates"
     When creating a new article, provide multiple templates (based on article type) to help with the creation of the article (e.g. add Biography section for characters).
 
+??? changelog "Article Folders"
+    Create folders to organize articles.
+
+??? changelog "Custom Article Types"
+    Add ability to create custom article types, in case the default ones aren't enough.
+
 ## Widgets
 Widgets are objects that can be inserted into an article as an interactive element.
 
@@ -29,18 +35,17 @@ Widgets are objects that can be inserted into an article as an interactive eleme
 ??? changelog "New Widget Type: Timelines"
     Allow timelines to be inserted into an article.
 
-??? changelog "New Widget Type: Hierarchies"
-    A way to display hierarchies, such as family trees, dynasties or social rankings.
-
 ??? changelog "New Widget Type: Interactive Tables"
     For example:<br>
     Pricelists for shops<br>
     (Rollable) loot tables
 
+??? changelog "New Widget Type: Relationships"
+    Easy way to manage and display relationship status between, for example, characters, characters and organizations, etc.
+
 ## Automation & Gaming Systems
 
 ??? changelog "Improved Gaming System Integrations"
-    Parse article data from actors.<br>
     Add (rollable) insertables, such as HP bars, skills, abilities, etc.
 
 ## Data Management
@@ -68,7 +73,8 @@ Widgets are objects that can be inserted into an article as an interactive eleme
 
 ??? changelog "Calendar System"
     Either use another module (such as [Simple Calendar](https://foundryvtt.com/packages/foundryvtt-simple-calendar)), or create a new calendar system.<br>
-    Integrate this calendar into the Timelines feature, link it to relevant article data (such as birth dates), insert dates or (partial) calendars into articles, etc.
+    Integrate this calendar into the Timelines feature, link it to relevant article data (such as birth dates), insert dates or (partial) calendars into articles, etc.<br>
+    Add calendar widget.
 
 ??? changelog "Themes"
-    Change how Worldbuilder appears. Configure backgrounds and colors.
+    Change how Worldbuilder appears. Configure backgrounds, colors, etc.
