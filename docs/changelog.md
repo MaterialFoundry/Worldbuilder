@@ -1,4 +1,24 @@
 Changes between module versions are documented here.<br>
+
+??? changelog "v1.1.1 - 20-06-2026"
+    This is a minor update with some bug fixes and other changes.<br>
+    Please note that while some improvements have been made with regards to detached articles and widgets, there are still some issues with them, such as when you're hovering over or clicking widget items.
+
+    ### Additions:
+    * Some fields where you can enter data (article tags, article/text sidebar options), the field will automatically be focused again, making it easy to add more data by continuing to type.
+    * Added "Default Sort Mode" setting in the "User Interface" section of the settings tab.
+
+    ### Fixes:
+    * User Notes on the Home tab are now properly synchronized (saved changes are immediately visible to other players).
+    * Fixed issue with the context menu not rendering (e.g. when adding a new tag to an article).
+    * Widgets can now be sorted like all other articles.
+    * (Foundry V14) Fixed widget panning for detached widgets and widgets in detached articles.
+
+    ### Other:
+    * Moved the "Show Players" and "Help" buttons of all applications into the core menu options (3 vertical dots).
+    * (Foundry V14) Removed the "Attach/Detach" buttons for widgets, because this doesn't work properly at the moment. You can still detach widgets using Alt + Click.
+    * (Foundry V14) Removed the "Change Mode" toggle for detached articles and widgets, because this doesn't work properly at the moment.
+
 ??? changelog "v1.1.0 - 13-05-2026"
     This update makes Worldbuilder compatible with Foundry v14, and it introduces a new Hierarchy widget.
 

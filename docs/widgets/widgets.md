@@ -13,6 +13,9 @@ See [here](../articles/pages.md#page-inserts) for more info on inserting widgets
 ### Stand-Alone
 You can use a widget stand-alone (without inserting it into an article). Simply open the widget like you would open an article.
 
+In Foundry v14 you can open an article detached (in a separate window) by holding the Alt key while clicking the widget.<br>
+Please note that at the moment it is not possible to switch between detached and attached widgets and there are some issues related to detached widgets (such as hovering over and clicking items not working correctly).
+
 #### Header Buttons
 When the widget is opened stand-alone, the widget has the following header buttons (at the top of the window):
 

@@ -15,6 +15,8 @@ You can configure how the articles are sorted by pressing the relevant button ne
 ## Opening an Article
 You can open an article by clicking on the article. This will open the [article window](../articles/articles.md).
 
+In Foundry v14 you can open an article detached (in a separate window) by holding the Alt key while clicking the article.
+
 ## Creating New Articles
 You can create new articles by clicking the "+ Create New" button, next to the search bar, or use the [document import](../articles/documentImport.md) feature.
 

@@ -58,6 +58,9 @@ The page headers in the table of contents are automatically generated, and press
     <p class="caption">The different article page navigation options, from left to right: "Table of Contents - Sidebar", "Table of Contents - Column" and "Buttons".</p>
 </div>
 
+### Default Sort Mode
+Configures the default sorting mode for all tabs of the main application. When Foundry refreshes, this sorting mode is used.
+
 ## Data Management
 <div class="imgContainer"><img src="../img/settings/dataManagement.png"></div>
 
