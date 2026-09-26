@@ -1,5 +1,17 @@
 Changes between module versions are documented here.<br>
 
+??? changelog "v1.1.2 - 26-09-2026"
+    ### Additions:
+    * The article sidebar and table of contents can now be expanded or collapsed.
+    * You can now add labels to the table of contents.
+
+    ### Fixes:
+    * Worldbuilder map notes are now visible for players if they have the correct article ownership.
+    * Sorting of articles now makes more sense, "Session 2" now comes before "Session 10".
+
+    ### Other:
+    * Worldbuilder map notes no longer require a dummy journal. If the journal exists, it will be automatically deleted.
+
 ??? changelog "v1.1.1 - 20-06-2026"
     This is a minor update with some bug fixes and other changes.<br>
     Please note that while some improvements have been made with regards to detached articles and widgets, there are still some issues with them, such as when you're hovering over or clicking widget items.
